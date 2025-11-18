@@ -120,7 +120,9 @@ int main() {
 				begin_time = clock(); //start timer
 
 				//sort function C to sort array
-				//array(wData, sz);
+				//function(wData, sz);
+
+				selectionSort(wData, sz);
 
 				end_time = clock();
 
