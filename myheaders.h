@@ -16,4 +16,4 @@ void 	insertionSort(long data[], long n);
 void 	heapSort(long data[], long n);
 void 	heapify(long data[], long n, long i);
 void 	selectionSort(long arr[], long n);
-void 	quickSort(long arr[], long low, long high);
+void 	quickSort(long arr[], long n);

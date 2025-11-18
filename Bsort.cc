@@ -18,7 +18,7 @@ void heapify(long data[], long n, long i){
 }
 
 void heapSort(long data[], long n){
-	for (long i = n/2 - 1; i>=0; --i){ //buulds heap from bottom up
+	for (long i = n/2 - 1; i>=0; --i){ //builds heap from bottom up
 		heapify(data, n, i); //heapify the nodes
 	}
 
