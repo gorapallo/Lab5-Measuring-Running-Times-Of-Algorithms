@@ -8,7 +8,7 @@ void heapify(long data[], long n, long i){
 
 	if (left < n && data[left] > data[largest])
 		largest=left;
-	if (right < n && data[right] > data[largeest])
+	if (right < n && data[right] > data[largest])
 		largest = right;
 
 	if (largest != i) {
