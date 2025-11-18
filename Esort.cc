@@ -16,7 +16,7 @@ void swap(T& a, T& b)
 }
 //bubblesort function
 template<typename T>
-void bubblesort(T data[], int n)
+void bubbleSort(T data[], int n)
 {
    for (int i = 0; i < n-1; i++) //cycle through each value to compare with next but not last
        for (int j = n-1; j > i; --j) //start from end of array(bottom of vertical column) and go up

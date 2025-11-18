@@ -18,4 +18,4 @@ void 	heapify(long data[], long n, long i);
 void 	selectionSort(long arr[], long n);
 void 	quickSort(long arr[], long n);
 void 	bubbleSort(long data[], int n);
-void 	countSort(long data[], long n);
+void 	countingSort(long data[], const long n);

@@ -181,7 +181,7 @@ int main() {
 
 					//sort function E to sort array
 					//function(wData, sz);
-
+					bubbleSort(wData, sz);
 					end_time = clock();
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
@@ -209,7 +209,7 @@ int main() {
 
 		//Call your sort function F here to sort the array "wData"
 		//function(wData, sz);
-
+		countingSort(wData, sz);
 		end_time = clock(); //end cpu timer
 
 		cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
