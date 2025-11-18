@@ -34,7 +34,8 @@ int main() {
                     // The function 'readfile' returns the size of the file that was read
 					// If the file could not be read, 'readfile' returns -1
 				
-					ifilename = "lab5_input.txt";
+//					ifilename = "lab5_input.txt";
+					ifilename = "test.txt";
 					sz = readfile(ifilename, data);
 			
 					if (sz < 0)	 {
@@ -63,9 +64,10 @@ int main() {
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "insertionSort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_A_out.txt";
+					//ofilename = "lab5_A_out.txt";
+					ofilename = "test_A_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -97,9 +99,10 @@ int main() {
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl <<"heapSort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_B_out.txt";
+					//ofilename = "lab5_B_out.txt";
+					ofilename = "test_B_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -127,9 +130,10 @@ int main() {
 				end_time = clock();
 
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-				cout << endl << "(C)Sort ran for " << cpu_time_used << " secs.";
+				cout << endl << "selectionSort ran for " << cpu_time_used << " secs.";
 
-				ofilename = "lab5_C_out.txt";
+				//ofilename = "lab5_C_out.txt";
+				ofilename = "test_C_out.txt";
 				writefile(wData, sz, ofilename);
 
 				if (sz < 0){
@@ -158,9 +162,10 @@ int main() {
 					end_time = clock();
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "quickSort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_D_out.txt";
+					//ofilename = "lab5_D_out.txt";
+					ofilename = "test_D_out.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0){
@@ -185,9 +190,10 @@ int main() {
 					end_time = clock();
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(E)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "bubbleSort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_E_out.txt";
+					//ofilename = "lab5_E_out.txt";
+					ofilename = "text_E_out.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0){
@@ -213,9 +219,10 @@ int main() {
 		end_time = clock(); //end cpu timer
 
 		cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-		cout << endl << "(F)Sort ran for " << cpu_time_used << " secs.";
+		cout << endl << "coutingSort ran for " << cpu_time_used << " secs.";
 
-		ofilename = "lab5_F_out.txt;";
+		//ofilename = "lab5_F_out.txt";
+		ofilename = "test_F_out.txt";
 		writefile(wData, sz, ofilename);
 
 
