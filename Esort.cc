@@ -7,16 +7,16 @@
 
 #include "myheaders.h"
 //swap function
-template<typename T>
-void swap(T& a, T& b)
-{
-   T temp = a;
-   a = b;
-   b = temp; // swap a and b(data[j] and data[j-1])
-}
+//template<typename T>
+//void swap(T& a, T& b)
+//{
+//   long temp = a;
+//   a = b;
+//   b = temp; // swap a and b(data[j] and data[j-1])
+//}
 //bubblesort function
-template<typename T>
-void bubbleSort(T data[], int n)
+
+void bubbleSort(long data[], long n)
 {
    for (int i = 0; i < n-1; i++) //cycle through each value to compare with next but not last
        for (int j = n-1; j > i; --j) //start from end of array(bottom of vertical column) and go up
