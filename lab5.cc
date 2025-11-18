@@ -152,6 +152,8 @@ int main() {
 
 					//sort function D to sort array
 					//function(wData, sz);
+					quickSort(wData, sz);
+
 
 					end_time = clock();
 
