@@ -33,8 +33,8 @@ int main() {
 			case 1: // Read input file and store data in arrays data1 and data2
                     // The function 'readfile' returns the size of the file that was read
 					// If the file could not be read, 'readfile' returns -1
-				
-					ifilename = "lab5_input.txt";
+					ifilename = "lab5_input_half.txt";
+//					ifilename = "lab5_input.txt"; for original txt file
 					//ifilename = "test.txt";
 					sz = readfile(ifilename, data);
 			
@@ -65,8 +65,8 @@ int main() {
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "insertionSort ran for " << cpu_time_used << " secs.";
-			
-					ofilename = "lab5_insertion_out.txt";
+					ofilename = "lab5_insertion_out2.txt";//doubled
+//					ofilename = "lab5_insertion_out.txt";
 //					ofilename = "test_A_out.txt";
 					writefile(wData, sz, ofilename);
 					
@@ -100,8 +100,8 @@ int main() {
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl <<"heapSort ran for " << cpu_time_used << " secs.";
-			
-					ofilename = "lab5_heap_out.txt";
+					ofilename = "lab5_heap_out2.txt"; //doubled
+					//ofilename = "lab5_heap_out.txt";
 //					ofilename = "test_B_out.txt";
 					writefile(wData, sz, ofilename);
 					
@@ -131,8 +131,8 @@ int main() {
 
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "selectionSort ran for " << cpu_time_used << " secs.";
-
-				ofilename = "lab5_selection_out.txt";
+				ofilename = "lab5_selection_out2.txt";//doubled
+//				ofilename = "lab5_selection_out.txt";
 //				ofilename = "test_C_out.txt";
 				writefile(wData, sz, ofilename);
 
@@ -164,7 +164,8 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "quickSort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_quicksort_out.txt";
+					ofilename = "lab5_quicksort_out2.txt";//doubled
+//					ofilename = "lab5_quicksort_out.txt";
 //					ofilename = "test_D_out.txt";
 					writefile(wData, sz, ofilename);
 
@@ -191,8 +192,8 @@ int main() {
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "bubbleSort ran for " << cpu_time_used << " secs.";
-
-					ofilename = "lab5_bubblesort_out.txt";
+					ofilename = "lab5_bubblesort_out2.txt";//doubled
+//					ofilename = "lab5_bubblesort_out.txt";
 //					ofilename = "text_E_out.txt";
 					writefile(wData, sz, ofilename);
 
@@ -220,8 +221,8 @@ int main() {
 
 		cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 		cout << endl << "coutingSort ran for " << cpu_time_used << " secs.";
-
-		ofilename = "lab5_countingsort_out.txt";
+		ofilename = "lab5_countingsort_out2.txt"; //doubled
+		//ofilename = "lab5_countingsort_out.txt";
 //		ofilename = "test_F_out.txt";
 		writefile(wData, sz, ofilename);
 
