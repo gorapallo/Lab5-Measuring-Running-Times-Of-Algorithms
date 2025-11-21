@@ -2,28 +2,31 @@
 
 
 void heapify(long data[], long n, long i){
-	long largest = i; //largest is set
-	long left = 2*i+1; //calculates left child index
-	long right = 2*i+2; //calculates right child index
+	long largest = i; //largest is set to i
+	long left = 2*i+1; //left child index
+	long right = 2*i+2; //right child index
 
-	if (left < n && data[left] > data[largest]) //if child > root
-		largest=left; //sets largest to left
-	if (right < n && data[right] > data[largest])//if child> root
-		largest = right;//sets largest to right
-
+	//check to see if the left child is bigger than the current largest
+	if (left < n && data[left] > data[largest])
+		largest=left; //sets largest to left child
+	//check to see if the right child is bigger than the current largest
+	if (right < n && data[right] > data[largest])
+		largest = right;//sets largest to right child
+	//check to see if the biggest is not the original i
 	if (largest != i) { //if largest is not root
-		swap(data[i], data[largest]); //swap root with largest
-		heapify(data, n, largest); //heapify the subtree
+		swap(data[i], data[largest]); //swap the values
+		heapify(data, n, largest);
 	}
 }
 
 void heapSort(long data[], long n){
 	for (long i = n/2 - 1; i>=0; --i){ //builds heap from bottom up
-		heapify(data, n, i); //heapify the nodes
+		heapify(data, n, i);
 	}
-
-	for (long i = n - 1; i>0; --i){ //extract elements from  the heap
-		swap(data[0], data[i]); //move root to the end
-		heapify(data, i, 0); //heapify the reduced heap
+	//take the biggest element and put it at the end
+	for (long i = n - 1; i>0; --i){
+		swap(data[0], data[i]); //move root to i
+		heapify(data, i, 0);
 	}
 }
+//array is sorted
