@@ -9,6 +9,12 @@
 //  stack space, run the following command from your terminal:
 //  ulimit -s 819200
 
+
+//Gavin Orapallo, Max Grear, Niall Green
+//Lab 5, ECE 2161-001
+//The purpose of this program is to run 6 different algorithms on two data sets to
+//compare the run times and see if they match the asymptotic complexity.
+
 #include <iostream>
 #include <ctime>
 #include "myheaders.h"
